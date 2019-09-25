@@ -589,7 +589,7 @@ Check_python(){
 	fi
 }
 Centos_yum(){
-	#yum update -y
+	yum update -y
 	cat /etc/redhat-release |grep 7\..*|grep -i centos>/dev/null
 	if [[ $? = 0 ]]; then
 		yum install -y vim unzip net-tools

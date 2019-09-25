@@ -20,8 +20,6 @@ expect "*无限*"
 send "\r"
 expect "*无限*"
 send "\r"
-expect "*y/d/N*"
-send "y\r"
 interact
 
 ########### multiport ##############

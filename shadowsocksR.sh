@@ -400,6 +400,8 @@ config_shadowsocks(){
     "workers":1
 }
 EOF
+
+cp -rf /root/shadowsocks.json /etc
 }
 
 # Install ShadowsocksR

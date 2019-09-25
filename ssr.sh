@@ -589,7 +589,7 @@ Check_python(){
 	fi
 }
 Centos_yum(){
-	yum update
+	yum update -y
 	cat /etc/redhat-release |grep 7\..*|grep -i centos>/dev/null
 	if [[ $? = 0 ]]; then
 		yum install -y vim unzip net-tools
@@ -598,7 +598,7 @@ Centos_yum(){
 	fi
 }
 Debian_apt(){
-	apt-get update
+	apt-get update -y
 	cat /etc/issue |grep 9\..*>/dev/null
 	if [[ $? = 0 ]]; then
 		apt-get install -y vim unzip net-tools
@@ -755,7 +755,7 @@ Install_Libsodium(){
 	fi
 	Check_Libsodium_ver
 	if [[ ${release} == "centos" ]]; then
-		yum update
+		yum update -y
 		echo -e "${Info} 安装依赖..."
 		yum -y groupinstall "Development Tools"
 		echo -e "${Info} 下载..."
@@ -766,7 +766,7 @@ Install_Libsodium(){
 		./configure --disable-maintainer-mode && make -j2 && make install
 		echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf
 	else
-		apt-get update
+		apt-get update -y
 		echo -e "${Info} 安装依赖..."
 		apt-get install -y build-essential
 		echo -e "${Info} 下载..."

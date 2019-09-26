@@ -1,0 +1,9 @@
+yum install NetworkManager git epel-release net-tools -y
+cd /root
+#git clone https://github.com/travislee8964/ocserv-auto
+mkdir ocserv-auto
+cd ocserv-auto
+wget --no-check-certificate https://raw.githubusercontent.com/dunji/test/master/ocserv-auto.sh
+chmod +x ocserv-auto.sh
+./ocserv-auto.sh
+

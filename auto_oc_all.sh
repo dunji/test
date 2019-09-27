@@ -87,7 +87,7 @@ function ConfigEnvironmentVariable {
         echo ${str}
     }
     #password=$(randstr)
-	password=31415
+	password=333
     printf "\nPlease input \e[33m${username}\e[0m's password.\n"
     printf "Random password is \e[33m${password}\e[0m, let it blank to use this password: "
     #read passwordtmp

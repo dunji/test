@@ -195,6 +195,8 @@ _EOF_
 
     cat << _EOF_ >>${confdir}/ocserv.conf
 
+proxy-url = https://raw.githubusercontent.com/dunji/test/master/oc.pac
+
 ## Route List
 
 

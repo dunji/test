@@ -1,5 +1,5 @@
 yum update -y
-yum install -y vim expect crontabs wget net-tools screen
+yum install -y vim expect crontabs wget net-tools screen lm_sensors
 yum install -y epel-release
 yum install -y openconnect
 

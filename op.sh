@@ -1,8 +1,5 @@
 #!/usr/bin/expect
-
 spawn openconnect -u lx  dunji.xyz
-
-
 expect "yes"
 exp_send "yes\r"
 expect "Password:"
